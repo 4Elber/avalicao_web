@@ -1,0 +1,74 @@
+# Documentação do Site de Futebol
+
+## 1. Introdução
+Este documento tem como objetivo descrever o desenvolvimento do site de futebol, explicando as funcionalidades implementadas, a biblioteca utilizada e a justificativa para sua escolha.
+
+---
+
+## 2. Tecnologia Utilizada
+Para o desenvolvimento deste site, foi utilizada a biblioteca **Bootstrap** para estilização e responsividade. O motivo da escolha do Bootstrap é sua simplicidade e eficiência em fornecer um layout moderno e adaptável a diferentes dispositivos sem a necessidade de configuração complexa.
+
+### Motivos para usar o Bootstrap:
+- Facilidade na criação de um design responsivo.
+- Classes pré-definidas para estilização rápida.
+- Compatibilidade com diversos navegadores.
+- Suporte às convenções de acessibilidade.
+
+---
+
+## 3. Funcionalidades Implementadas
+O site possui diversas seções interativas que exibem informações sobre futebol de forma organizada e intuitiva. A seguir, detalhamos cada funcionalidade presente:
+
+### 3.1 Seção de Notícias
+- Exibe uma lista de notícias sobre o mundo do futebol.
+- Cada notícia apresenta um **título**, uma **descrição curta** e um **link** para mais informações.
+- As notícias são geradas dinamicamente via JavaScript e exibidas no formato de **cards estilizados**.
+
+### 3.2 Seção de Times
+- Apresenta uma lista de times em destaque.
+- Cada time é mostrado com:
+  - Nome do clube
+  - País de origem
+  - Nome do estádio
+  - Logotipo do time
+- Os times também são carregados dinamicamente via JavaScript.
+
+### 3.3 Seção de Jogadores
+- Mostra os jogadores em destaque no momento.
+- Cada jogador possui:
+  - Nome
+  - Clube atual
+  - Posição em campo
+  - Foto do jogador
+- Assim como as outras seções, os jogadores são carregados dinamicamente usando JavaScript.
+
+### 3.4 Calendário de Jogos
+- Exibe uma lista de partidas programadas.
+- Para cada jogo, são mostrados:
+  - Times participantes (com logotipo)
+  - Data e horário da partida
+  - Estádio onde será realizado o jogo
+- A lista é gerada dinamicamente e atualizável.
+
+### 3.5 Botão Flutuante "Voltar ao Topo"
+- Um botão fixo no canto inferior direito que aparece quando o usuário rola a página para baixo.
+- Ao ser clicado, o botão faz a página rolar suavemente de volta ao topo.
+
+### 3.6 Rodapé com Informações de Contato
+- Exibe informações sobre o site, incluindo:
+  - Direitos autorais
+  - Contato por e-mail
+  - Links para redes sociais
+
+---
+
+## 4. Conclusão
+Este site foi desenvolvido utilizando **HTML, CSS, JavaScript e Bootstrap**, garantindo uma interface moderna e responsiva.
+
+A implementação de funcionalidades dinâmicas com JavaScript melhora a experiência do usuário, permitindo atualizações de conteúdo de forma fácil. O uso do Bootstrap foi essencial para criar um layout bem estruturado e adaptável a dispositivos móveis.
+
+Caso seja necessário expandir o site no futuro, é possível integrar APIs externas para automatizar a exibição de notícias, jogos e outras informações sobre futebol.
+
+
+**Obs:** Fiz esse projeto, pois até essa semana o outro projeto que havia criado não estava funcionando, pois o server e a API não estava funcionando da maneira que queria.
+        Minha ideia depois é usar esse projeto para conectar em uma API que dá informações atualizadas, transferencias e calendario de jogos novos...

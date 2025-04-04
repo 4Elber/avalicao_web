@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #007bff !important;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .botao-flutuante {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+            /* Inicialmente oculto */
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .botao-flutuante:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+
+
+        @media (max-width: 768px) {
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Futebol News</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#times">Times em Destaque</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#jogadores">Jogadores em Destaque</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#calendario">Calendário de Jogos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <section id="noticias">
+            <h2>Notícias e Atualizações</h2>
+            <div id="noticias-lista"></div>
+        </section>
+
+        <section id="times">
+            <h2>Times em Destaque</h2>
+            <div id="times-lista"></div>
+        </section>
+
+        <section id="jogadores">
+            <h2>Jogadores em Destaque</h2>
+            <div id="jogadores-lista"></div>
+        </section>
+
+        <section id="calendario">
+            <h2>Calendário de Jogos</h2>
+            <div id="calendario-lista"></div>
+        </section>
+
+    </div>
+
+    <button id="btnTopo" class="botao-flutuante" onclick="voltarAoTopo()">⬆</button>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Futebol News - Todos os direitos reservados</p>
+            <p>Contato: <a href="mailto:contato@futebolnews.com">contato@futebolnews.com</a></p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">📘</a>
+                <a href="https://twitter.com" target="_blank">🐦</a>
+                <a href="https://instagram.com" target="_blank">📸</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
